@@ -1,0 +1,29 @@
+{
+    "name": "petah/ui-date-range-picker",
+    "description": "Date range picker UI widget.",
+    "keywords": ["ui"],
+    "type": "library",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://vm3.hd1.panmedia.co.nz/satis/"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Filament Group",
+            "homepage": "http://filamentgroup.com",
+        },
+        {
+            "name": "David Neilsen",
+            "email": "david@panmedia.co.nz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+    }
+}
