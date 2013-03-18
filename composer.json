@@ -23,6 +23,8 @@
     "require": {
     },
     "require-dev": {
+        "pan/theme": "dev-tom-refactor",
+        "phing/phing": "dev-master"
     },
     "autoload": {
     }
