@@ -125,7 +125,7 @@
 
 
 		//build picker and
-		var rp = $('<div class="ui-daterangepicker ui-widget ui-helper-clearfix ui-widget-content ui-corner-all"></div>');
+		var rp = $('<div class="ui-daterangepicker ui-state-default ui-widget ui-helper-clearfix ui-widget-content ui-corner-all"></div>');
 		var rpPresets = (function(){
 			var ul = $('<ul class="ui-widget-content"></ul>').appendTo(rp);
 			$.each(options.presetRanges,function(){
