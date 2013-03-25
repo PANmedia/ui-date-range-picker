@@ -1,5 +1,5 @@
-@import "compass",
-        "pan/variables";
+@import 'compass';
+@import 'pan/variables';
 
 .ui-daterangepickercontain {
     position: absolute;
@@ -18,7 +18,10 @@
 .ui-daterangepicker {
     @include border-top-right-radius(0);
     @include box-shadow($shadow-x $shadow-y $shadow-blur $shadow-spread $default-shadow inset, 0 3px 7px $dialog-shadow);
-    ul, .ranges, .range-start, .range-end {
+    ul,
+    .ranges,
+    .range-start,
+    .range-end {
         float: left;
         padding: 0;
         margin: 0;
@@ -29,13 +32,14 @@
         padding: 12px 11px 47px 0;
 
         background: none transparent;
-        border-top: 0 none; 
+        border-top: 0 none;
         border-right: 0 none;
-        border-bottom: 0 none; 
+        border-bottom: 0 none;
         @include box-shadow(-1px 0 0 $default-shadow);
         @include border-radius(0);
     }
-    .range-start, .range-end {
+    .range-start,
+    .range-end {
         margin-left: 11px;
     }
     button.btnDone {
@@ -57,7 +61,8 @@
         padding: 6px 5px 7px 9px;
         cursor: pointer;
         margin: 1px 0;
-        &.ui-state-hover, &.ui-state-active {
+        &.ui-state-hover,
+        &.ui-state-active {
             padding: 5px 4px 6px 8px;
         }
         &.preset_0 {
@@ -91,7 +96,8 @@
     .ui-datepicker {
         padding: 0;
     }
-    .title-start, .title-end {
+    .title-start,
+    .title-end {
         display: block;
         margin: 0 0 .2em;
         font-size: 1em;
@@ -112,11 +118,13 @@
         padding: 2px;
         height: 1.1em;
     }
-    .ui-daterangepicker-prev, .ui-daterangepicker-next {
+    .ui-daterangepicker-prev,
+    .ui-daterangepicker-next {
         position: absolute;
         top: 2px;
         padding: 1px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             padding: 0;
         }
     }
