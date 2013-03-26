@@ -18,8 +18,7 @@
 
 .ui-daterangepicker {
     @include border-top-right-radius(0);
-    @include box-shadow($shadow-x $shadow-y $shadow-blur $shadow-spread $default-shadow inset, 0 3px 7px $dialog-shadow);
-
+    @include box-shadow($shadow-x $shadow-y $shadow-blur $shadow-spread $default-shadow inset, $theme-shadow);
     ul,
     .ranges,
     .range-start,
