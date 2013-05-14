@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="Petah UI Date Range Picker" default="build">
+<project name="PAN UI Date Range Picker" default="build">
     <target name="build">
-        <mkdir dir="${phing.dir.petah_ui_date_range_picker}/packages" />
+        <mkdir dir="${phing.dir.pan_ui_date_range_picker}/packages" />
         <phingcall target="css" />
         <phingcall target="cssdev" />
         <phingcall target="js" />
@@ -15,8 +15,8 @@
     <target name="css" description="Compile and compress all CSS files">
         <scss
             scssFile="date-range-picker.scss"
-            cssFile="${phing.dir.petah_ui_date_range_picker}/packages/date-range-picker.min.css"
-            dir="${phing.dir.petah_ui_date_range_picker}/src"
+            cssFile="${phing.dir.pan_ui_date_range_picker}/packages/date-range-picker.min.css"
+            dir="${phing.dir.pan_ui_date_range_picker}/src"
             compress="true"
         />
     </target>
@@ -24,13 +24,13 @@
     <target name="cssdev" description="Compile all CSS files">
         <scss
             scssFile="date-range-picker.scss"
-            cssFile="${phing.dir.petah_ui_date_range_picker}/packages/date-range-picker.css"
-            dir="${phing.dir.petah_ui_date_range_picker}/src"
+            cssFile="${phing.dir.pan_ui_date_range_picker}/packages/date-range-picker.css"
+            dir="${phing.dir.pan_ui_date_range_picker}/src"
         />
     </target>
 
     <target name="js" description="Compile and compress all JS">
-        <exec dir="${phing.dir.petah_ui_date_range_picker}" level="info" logoutput="true" command="
+        <exec dir="${phing.dir.pan_ui_date_range_picker}" level="info" logoutput="true" command="
             closure
                 --js src/date.js
                 --js src/date-range-picker.js
@@ -39,7 +39,7 @@
     </target>
 
     <target name="jsdev" description="Compile all JS files">
-        <exec dir="${phing.dir.petah_ui_date_range_picker}" level="info" logoutput="true" command="
+        <exec dir="${phing.dir.pan_ui_date_range_picker}" level="info" logoutput="true" command="
             cat
                 src/date.js
                 src/date-range-picker.js

@@ -1,14 +1,10 @@
 {
-    "name": "petah/ui-date-range-picker",
+    "name": "pan/ui-date-range-picker",
     "description": "Date range picker UI widget.",
-    "keywords": ["ui"],
-    "type": "library",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://vm3.hd1.panmedia.co.nz/satis/"
-        }
+    "keywords": [
+        "ui"
     ],
+    "type": "library",
     "authors": [
         {
             "name": "Filament Group",
@@ -20,12 +16,8 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-    },
     "require-dev": {
-        "pan/theme": "dev-tom-refactor",
+        "pan/theme": "dev-master",
         "phing/phing": "dev-master"
-    },
-    "autoload": {
     }
 }
