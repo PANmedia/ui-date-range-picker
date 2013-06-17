@@ -3,7 +3,6 @@
     <target name="build">
         <mkdir dir="${phing.dir.pan_ui_date_range_picker}/packages" />
         <phingcall target="css" />
-        <phingcall target="cssdev" />
         <phingcall target="js" />
         <phingcall target="jsdev" />
     </target>
@@ -13,15 +12,6 @@
     </adhoc-task>
 
     <target name="css" description="Compile and compress all CSS files">
-        <scss
-            scssFile="date-range-picker.scss"
-            cssFile="${phing.dir.pan_ui_date_range_picker}/packages/date-range-picker.min.css"
-            dir="${phing.dir.pan_ui_date_range_picker}/src"
-            compress="true"
-        />
-    </target>
-
-    <target name="cssdev" description="Compile all CSS files">
         <scss
             scssFile="date-range-picker.scss"
             cssFile="${phing.dir.pan_ui_date_range_picker}/packages/date-range-picker.css"
