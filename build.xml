@@ -22,7 +22,6 @@
     <target name="js" description="Compile and compress all JS">
         <exec dir="${phing.dir.pan_ui_date_range_picker}" level="info" logoutput="true" command="
             closure
-                --js src/date.js
                 --js src/date-range-picker.js
                 --js_output_file packages/date-range-picker.min.js
         " />
@@ -31,7 +30,6 @@
     <target name="jsdev" description="Compile all JS files">
         <exec dir="${phing.dir.pan_ui_date_range_picker}" level="info" logoutput="true" command="
             cat
-                src/date.js
                 src/date-range-picker.js
             > packages/date-range-picker.js
         " />
